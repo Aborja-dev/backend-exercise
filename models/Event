@@ -1,0 +1,9 @@
+const { default: mongoose } = require("mongoose");
+
+const EventSchema = mongoose.Schema({
+    name: String,
+    url: String
+})
+
+const Event = mongoose.model('Event', EventSchema);
+module.exports = Event;
